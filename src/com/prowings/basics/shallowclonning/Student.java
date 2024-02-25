@@ -1,0 +1,33 @@
+package com.prowings.basics.shallowclonning;
+
+public class Student implements Cloneable {
+	
+	String name;
+	int id;
+	Address address;
+	
+	
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Student(String name, int id, Address address) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.address = address;
+	}
+	
+	
+	public Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
+	}
+	
+	
+	
+	
+
+}
